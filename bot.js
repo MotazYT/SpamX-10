@@ -5,14 +5,6 @@ const client2 = new Discord.Client();
 
 var prefix = "1";
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
-});
-
-client2.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
-});
-
 client.on('ready', async() => {
 var server = "698465041158242306"; // ايدي السررفر
 var channel = "698496073873883186";//ايدي الروم
