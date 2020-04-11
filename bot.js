@@ -1,24 +1,17 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
-const client2 = new Discord.Client();
+var prefix = "3";
 
-
-var prefix = "1";
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
 
 client.on('ready', async() => {
 var server = "698465041158242306"; // ايدي السررفر
 var channel = "698497593361301504";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channel.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
-    },100);
-})
-
-client2.on('ready', async() => {
-var server = "698465041158242306"; // ايدي السررفر
-var channel = "698497593361301504";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channel.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
-    },100);
+    client.guilds.get(server).channels.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
+    },305);
 })
 
 client.on('message', message => {
@@ -37,7 +30,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
   }
  });
 
-client2.on('message', message => {
+ client2.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -52,6 +45,14 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
    message.delete()
   }
  });
+ 
+ client2.on('ready', async() => {
+var server = "698465041158242306"; // ايدي السررفر
+var channel = "698497593361301504";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
+    },305);
+})
 
-client.login("Njk4MjU4NDkwOTMzNzcyMzUw.XpDOCw.fc0L4lOhKEO__CdKuTkcOYQwXs8");
-client2.login("Njk4NDY1NDc5ODA2NjgxMTM4.XpGOzw.QlLnk3j-XsioQYkTsHZTtD5keNo")
+client.login(process.env.BOT_TOKEN);
+client2.login(process.env.BOT_TOKEN);
