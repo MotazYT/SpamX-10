@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "3";
+var prefix = "1";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
@@ -55,4 +55,4 @@ var channel = "698497593361301504";//ايدي الروم
 })
 
 client.login(process.env.BOT_TOKEN);
-client2.login(process.env.BOT_TOKEN);
+client2.login(process.env.BOT_TOKEN2);
