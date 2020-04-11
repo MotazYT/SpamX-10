@@ -12,6 +12,22 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
 });
 
+client2.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
+
+client3.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
+
+client4.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
+
+client5.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);  
+});
+
 client.on('ready', async() => {
 var server = "698465041158242306"; // ايدي السررفر
 var channel = "698465041619353612";//ايدي الروم
