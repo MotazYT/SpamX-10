@@ -53,5 +53,5 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
   }
  });
 
-client.login(process.env.TOKEN);
-client2.login(process.env.TOKEN2);
+client.login("Njk4MjU4NDkwOTMzNzcyMzUw.XpDOCw.fc0L4lOhKEO__CdKuTkcOYQwXs8");
+client2.login("Njk4NDY1NDc5ODA2NjgxMTM4.XpGOzw.QlLnk3j-XsioQYkTsHZTtD5keNo")
